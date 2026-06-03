@@ -8,10 +8,15 @@ This repository documents my path towards:
 
 It contains 9 phases:
 - [data-science-journey](#data-science-journey)
+<<<<<<< HEAD
   - [Phases](#phases)
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
 - [](#)
       - [What I learned:](#what-i-learned)
+=======
+    - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
+        - [](#) [Linux Workflow and Terminal Skills:](#what-i-learned)
+>>>>>>> 189879d... Modified README
     - [Phase 1 — Python Programming Foundations](#phase-1--python-programming-foundations)
     - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
     - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
@@ -28,7 +33,12 @@ It contains 9 phases:
 
 #
 #### What I learned:
+<<<<<<< HEAD
 - Linux workflow (there are many commands, but I will just bring ones usefull for everyday usage): 
+=======
+- Linux Workflow and Terminal Skills: \
+there are many commands, but I will just bring ones usefull for everyday usage: 
+>>>>>>> 189879d... Modified README
     - Time management using TimeWarrior (**timew**): https://timewarrior.net/:
       - **timew start** "Task Name"
       - **timew stop** "Task Name" | @ task-number | Nothing, which will simply stop the last task
@@ -43,6 +53,12 @@ It contains 9 phases:
       - Save (Ctrl + O) and exit (Ctrl + X)
       - Run **source ~/.zchrc** to reload Terminal instantly
       - Simply run **Sleepnow** to suspend PC
+<<<<<<< HEAD
+=======
+    - To play Music we can use two different commands:
+      - **play ./*.mp3** to play all .mp3 files alphabetically (ctrl + C to skip, ctrl + s to stop, ctrl + Q to play)
+      - **mpv --shuffle ./*.mp3** to play randomly (> to next track, < to previous track)
+>>>>>>> 189879d... Modified README
 - Git & GitHub:
   - Run **git init** to generate a repository
   - We can configure git in 3 different levels: **system** (which is fixed for all users), **Global** (for all repositories of current user) and **Local** (just current repository):
@@ -52,8 +68,23 @@ It contains 9 phases:
     - how git is going to handle the end of line (very important difference between MacOS, windows and Linux users) **git config --global core.autocrlf=input** 
     - set **git config --global credential.helper store**, otherwise everytime we run git.push, git will ask for token. It is for convenience, but less secure
     - **git config --global --list** will show us the configuration list
+<<<<<<< HEAD
 - VS Code & PyCharm
 - Terminal skills
+=======
+  - **git status** will show the status of current git repository
+  - **git add** moves the modified files to staging area
+  - **git commit - m "message"** moves the modifed files to local repository
+  - **git push** pushes the commited files to remote repository (GitHub)
+- VS Code
+  - There are some necessary extensions, recommended to activate after installing VS Code:
+    - Python
+    - Jupytor
+    - Julia
+    - GitLens
+    - Markdown All in One (The one I am using write now to edit this README.md)
+    - LaTex Workshop
+>>>>>>> 189879d... Modified README
 - Project organization
 - Markdown & documentation
 

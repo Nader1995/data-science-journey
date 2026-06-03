@@ -10,8 +10,6 @@ It contains 9 phases:
 - [data-science-journey](#data-science-journey)
   - [Phases](#phases)
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
-- [](#)
-      - [What I learned:](#what-i-learned)
     - [Phase 1 — Python Programming Foundations](#phase-1--python-programming-foundations)
     - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
     - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
@@ -26,8 +24,7 @@ It contains 9 phases:
 
 ### Phase 0 — Environment & Developer Foundations
 
-#
-#### What I learned:
+What I learned:
 - Linux Workflow and Terminal Skills: \
 there are many commands, but I will just bring ones usefull for everyday usage: 
     - Time management using TimeWarrior (**timew**): https://timewarrior.net/:

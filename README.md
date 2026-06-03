@@ -8,9 +8,10 @@ This repository documents my path towards:
 
 It contains 9 phases:
 - [data-science-journey](#data-science-journey)
-
+  - [Phases](#phases)
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
-        - [](#) [Linux Workflow and Terminal Skills:](#what-i-learned)
+- [](#)
+      - [What I learned:](#what-i-learned)
     - [Phase 1 — Python Programming Foundations](#phase-1--python-programming-foundations)
     - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
     - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
@@ -59,6 +60,13 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - **git add** moves the modified files to staging area
   - **git commit - m "message"** moves the modifed files to local repository
   - **git push** pushes the commited files to remote repository (GitHub)
+  - **git fetch** checkes any update from GitHub without changing anything
+  - **git clone** copies a repository from GitHub to my computer
+  - **git fork** creates my own GitHub copy of someone's repository and changes owenership
+  - **git pull** is basically git fetch + git clone 
+  - **git merge** combines two branches together
+  - **git diff** shows any changes made
+  - **git tag** tag any specific commit for future reference
 - VS Code
   - There are some necessary extensions, recommended to activate after installing VS Code:
     - Python

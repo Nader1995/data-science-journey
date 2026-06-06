@@ -74,6 +74,9 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - Markdown All in One (The one I am using write now to edit this README.md)
     - LaTex Workshop
 #### Phase 0.5 — .ipynb & .venv
+  - **ctrl + shift + P** opens Command Palette in VS Code
+  - **ctrl + shift + X** opens extinsions in VS Code
+  - In Command Palette type **Create: new Jupytor notebook** to create a new Jupytor notebook
  
 ### Phase 1 — Python Programming Foundations
 - Python syntax

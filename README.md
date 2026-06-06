@@ -10,6 +10,7 @@ It contains 9 phases:
 - [data-science-journey](#data-science-journey)
   - [Phases](#phases)
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
+      - [Phase 0.5 — .ipynb \& .venv](#phase-05--ipynb--venv)
     - [Phase 1 — Python Programming Foundations](#phase-1--python-programming-foundations)
     - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
     - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
@@ -72,7 +73,8 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - GitLens
     - Markdown All in One (The one I am using write now to edit this README.md)
     - LaTex Workshop
-
+#### Phase 0.5 — .ipynb & .venv
+ 
 ### Phase 1 — Python Programming Foundations
 - Python syntax
 - Functions & modules

@@ -79,7 +79,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - In Command Palette type **Create: new Jupytor notebook** to create a new Jupytor notebook
   - Run **apt install python3.8-venv** to install .venv module
   - Run **python3 -m venv .venv** to generate the virtual environment and install packages there
-  - Run **~/.venv/bin/activate** to activate the virtual environment
+  - Run **source .venv/bin/activate** in the directory that contains **.venv** to activate the virtual environment
   - **pip list** shows all installed packages and **pip check** checks out if there is any conflict among packages
  
 ### Phase 1A — DATA Exploration with Pandas

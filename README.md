@@ -10,8 +10,8 @@ It contains 9 phases:
 - [data-science-journey](#data-science-journey)
   - [Phases](#phases)
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
-      - [Phase 0.5 — .ipynb \& .venv](#phase-05--ipynb--venv)
-    - [Phase 1 — Python Programming Foundations](#phase-1--python-programming-foundations)
+      - [Phase 0.5 — Interactive Python Notebook (.ipynb) \& Virtual Environment (.venv)](#phase-05--interactive-python-notebook-ipynb--virtual-environment-venv)
+    - [Phase 1A — DATA Exploration with Pandas](#phase-1a--data-exploration-with-pandas)
     - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
     - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
     - [Phase 4 — SQL \& Data Management](#phase-4--sql--data-management)
@@ -73,17 +73,22 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - GitLens
     - Markdown All in One (The one I am using write now to edit this README.md)
     - LaTex Workshop
-#### Phase 0.5 — .ipynb & .venv
+#### Phase 0.5 — Interactive Python Notebook (.ipynb) & Virtual Environment (.venv)
   - **ctrl + shift + P** opens Command Palette in VS Code
   - **ctrl + shift + X** opens extinsions in VS Code
   - In Command Palette type **Create: new Jupytor notebook** to create a new Jupytor notebook
+  - Run **apt install python3.8-venv** to install .venv module
+  - Run **python3 -m venv .venv** to generate the virtual environment and install packages there
+  - Run **~/.venv/bin/activate** to activate the virtual environment
+  - **pip list** shows all installed packages and **pip check** checks out if there is any conflict among packages
  
-### Phase 1 — Python Programming Foundations
+### Phase 1A — DATA Exploration with Pandas
+- Pandas
+  - ...
 - Python syntax
 - Functions & modules
 - Object-oriented programming
 - File handling
-- Virtual environments
 - Scientific Python ecosystem
 
 ### Phase 2 — Mathematics & Statistics for Data Science

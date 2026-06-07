@@ -24,3 +24,6 @@ rad.json
 TestResults.xml
 logs/
 *.log
+.venv/
+__pycache__/
+.ipynb_checkpoints/

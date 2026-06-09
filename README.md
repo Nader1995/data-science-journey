@@ -84,7 +84,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
  
 ### Phase 1A — DATA Exploration with Pandas
 - Pandas
-  - ...
+  - For more information visit: pandas_experiment.ipynb
 - Python syntax
 - Functions & modules
 - Object-oriented programming

@@ -29,4 +29,4 @@ logs/
 __pycache__/
 .ipynb_checkpoints/
 # Unimportant files
-.csv
+my_dataframe.csv

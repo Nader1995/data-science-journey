@@ -24,6 +24,9 @@ rad.json
 TestResults.xml
 logs/
 *.log
+# Virtual environment folder
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+# Unimportant files
+.csv

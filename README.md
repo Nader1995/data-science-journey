@@ -85,6 +85,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
 ### Phase 1A — DATA Exploration with Pandas
 - Pandas
   - For more information visit: pandas_experiment.ipynb
+  - Here is a valuble website to learn Pandas easily and do exercises along side: https://www.kaggle.com/learn/pandas
 - Python syntax
 - Functions & modules
 - Object-oriented programming

@@ -51,7 +51,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - set name using **git config --global user.name "name of user"**
     - set email address using **git config --global user.email email address**
     - set default editor to VS code editor using **git config --global core.editor "code --wait"**
-    - how git is going to handle the end of line (very important difference between MacOS, windows and Linux users) **git config --global core.autocrlf=input** 
+    - how git is going to handle the end of line (very important difference between MacOS, windows and Linux users) **git config --global core.autocrlf input** 
     - set **git config --global credential.helper store**, otherwise everytime we run git.push, git will ask for token. It is for convenience, but less secure
     - **git config --global --list** will show us the configuration list
   - **git status** will show the status of current git repository

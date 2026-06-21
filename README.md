@@ -54,6 +54,10 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - how git is going to handle the end of line (very important difference between MacOS, windows and Linux users) **git config --global core.autocrlf input** 
     - set **git config --global credential.helper store**, otherwise everytime we run git.push, git will ask for token. It is for convenience, but less secure
     - **git config --global --list** will show us the configuration list
+    - In order to change the name of branch from **master** to **main**, first make the first commit, then run **git branch -m master main**
+    - To link your local Repo to GitHub, make a GitHub Repo with appropriate name, and do NOT check .gitignore or README.md or LICENSE because you are going to commit them locally (if you create them, then the header in GitHub will be ahead of header in local repo, which can cause confusion)
+    - Aftr creating Repo, copy the HTTPS address and run **git remote add origin "address"**. You do NOT need to add username and Token you already ran **git config --global credential.helper store**
+    - Run **git push -u origin main** to push the first commit, because of **-u** git will remember, and from now on you just need to run **git push** 
   - **git status** will show the status of current git repository
   - **git add** moves the modified files to staging area
   - **git commit - m "message"** moves the modifed files to local repository

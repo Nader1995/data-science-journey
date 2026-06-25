@@ -12,13 +12,7 @@ It contains 9 phases:
     - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
       - [Phase 0.5 — Interactive Python Notebook (.ipynb) \& Virtual Environment (.venv)](#phase-05--interactive-python-notebook-ipynb--virtual-environment-venv)
     - [Phase 1A — DATA Exploration with Pandas](#phase-1a--data-exploration-with-pandas)
-    - [Phase 2 — Mathematics \& Statistics for Data Science](#phase-2--mathematics--statistics-for-data-science)
-    - [Phase 3 — Data Analysis \& Visualization](#phase-3--data-analysis--visualization)
-    - [Phase 4 — SQL \& Data Management](#phase-4--sql--data-management)
-    - [Phase 5 — Machine Learning Foundations](#phase-5--machine-learning-foundations)
-    - [Phase 6 — Advanced Machine Learning \& AI](#phase-6--advanced-machine-learning--ai)
-    - [Phase 7 — Portfolio \& Real Projects](#phase-7--portfolio--real-projects)
-    - [Phase 8 — Specialization \& Career Direction](#phase-8--specialization--career-direction)
+    - [Phase 1B — Pandas Project](#phase-1b--pandas-project)
 
 
 ## Phases
@@ -90,60 +84,6 @@ there are many commands, but I will just bring ones usefull for everyday usage:
 - Pandas
   - For more information visit: pandas_experiment.ipynb
   - Here is a valuble website to learn Pandas easily and do exercises along side: https://www.kaggle.com/learn/pandas
-- Python syntax
-- Functions & modules
-- Object-oriented programming
-- File handling
-- Scientific Python ecosystem
 
-### Phase 2 — Mathematics & Statistics for Data Science
-- Linear algebra
-- Probability
-- Statistics
-- Calculus concepts
-- Data visualization
-- Numerical computing
-
-### Phase 3 — Data Analysis & Visualization
-- NumPy
-- Pandas
-- Matplotlib
-- Exploratory data analysis
-- Real-world datasets
-- Jupyter notebooks
-
-### Phase 4 — SQL & Data Management
-- SQL fundamentals
-- Databases
-- Data cleaning
-- Data pipelines
-- Data warehousing basics
-
-### Phase 5 — Machine Learning Foundations
-- Supervised learning
-- Unsupervised learning
-- Scikit-learn
-- Model evaluation
-- Feature engineering
-
-### Phase 6 — Advanced Machine Learning & AI
-- Deep learning
-- Neural networks
-- PyTorch
-- Computer vision
-- NLP fundamentals
-
-### Phase 7 — Portfolio & Real Projects
-- GitHub portfolio
-- End-to-end projects
-- Research-oriented projects
-- Open-source contribution
-- Kaggle practice
-
-### Phase 8 — Specialization & Career Direction
-- Data science
-- AI engineering
-- Computational physics
-- Quantum technologies
-- Research computing
-- Industry applications
+### Phase 1B — Pandas Project
+  - Click on **https://github.com/Nader1995/astornomy.git** to learn more about a real astronomy project, including data filtering and analysis using Pandas 

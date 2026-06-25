@@ -8,16 +8,18 @@ This repository documents my path towards:
 
 It contains 9 phases:
 - [data-science-journey](#data-science-journey)
-  - [Phases](#phases)
-    - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
-      - [Phase 0.5 — Interactive Python Notebook (.ipynb) \& Virtual Environment (.venv)](#phase-05--interactive-python-notebook-ipynb--virtual-environment-venv)
+- [Phases](#phases)
+  - [Phase 0 — Environment \& Developer Foundations](#phase-0--environment--developer-foundations)
+    - [Phase 0.5 — Interactive Python Notebook \& Virtual Environment](#phase-05--interactive-python-notebook--virtual-environment)
+  - [Phase 1 — Pandas](#phase-1--pandas)
     - [Phase 1A — DATA Exploration with Pandas](#phase-1a--data-exploration-with-pandas)
     - [Phase 1B — Pandas Project](#phase-1b--pandas-project)
+  - [Phase 2 — SQL \& Database](#phase-2--sql--database)
 
 
-## Phases
+# Phases
 
-### Phase 0 — Environment & Developer Foundations
+## Phase 0 — Environment & Developer Foundations
 
 What I learned:
 - Linux Workflow and Terminal Skills: \
@@ -71,7 +73,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - GitLens
     - Markdown All in One (The one I am using write now to edit this README.md)
     - LaTex Workshop
-#### Phase 0.5 — Interactive Python Notebook (.ipynb) & Virtual Environment (.venv)
+### Phase 0.5 — Interactive Python Notebook & Virtual Environment
   - **ctrl + shift + P** opens Command Palette in VS Code
   - **ctrl + shift + X** opens extinsions in VS Code
   - In Command Palette type **Create: new Jupytor notebook** to create a new Jupytor notebook
@@ -80,6 +82,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - Run **source .venv/bin/activate** in the directory that contains **.venv** to activate the virtual environment
   - **pip list** shows all installed packages and **pip check** checks out if there is any conflict among packages
  
+## Phase 1 — Pandas  
 ### Phase 1A — DATA Exploration with Pandas
 - Pandas
   - For more information visit: pandas_experiment.ipynb
@@ -87,3 +90,5 @@ there are many commands, but I will just bring ones usefull for everyday usage:
 
 ### Phase 1B — Pandas Project
   - Click on **https://github.com/Nader1995/astornomy.git** to learn more about a real astronomy project, including data filtering and analysis using Pandas 
+
+## Phase 2 — SQL & Database

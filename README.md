@@ -15,6 +15,7 @@ It contains 9 phases:
     - [Phase 1A — DATA Exploration with Pandas](#phase-1a--data-exploration-with-pandas)
     - [Phase 1B — Pandas Project](#phase-1b--pandas-project)
   - [Phase 2 — SQL \& Database](#phase-2--sql--database)
+    - [Phase 2A — SQL Fundamentals](#phase-2a--sql-fundamentals)
 
 
 # Phases
@@ -92,3 +93,5 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - Click on **https://github.com/Nader1995/astornomy.git** to learn more about a real astronomy project, including data filtering and analysis using Pandas 
 
 ## Phase 2 — SQL & Database
+
+### Phase 2A — SQL Fundamentals 

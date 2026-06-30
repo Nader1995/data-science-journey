@@ -95,3 +95,13 @@ there are many commands, but I will just bring ones usefull for everyday usage:
 ## Phase 2 — SQL & Database
 
 ### Phase 2A — SQL Fundamentals 
+  - **Database** is an organized collection of data
+  - We use **Database Management System** or **DBMS** to modify Database. DBMS softwares are: MySQL, Oracle and etc.
+  - Database can be **Relational** or **NoSQL**. In the former, data is divided into tables which are in relation with each other. The later does NOT have this factor. 
+  - **SQL** (read SeQueL) or **Structured Query Language** is just applicable to Relational Database.
+  - We use **MySQL** (mysql.com) in this tutorial and **MySQL Workbench** as its graphical user interface
+  - Install MySQL easily using Terminal with this command: 
+    - sudo apt install default-mysql-server
+  - I am currecntly using Ubuntu 20.4, and since MySQL Workbench is not compatible with my Ubuntu version, I installed **DBeaver** using this command: **sudo snap install DBeaver-ce --classic**
+  - To make sure SQL server is running:
+    - **sudo systemctl status mysql**, if it says **Active: active (running)** we are good to go otherwise run: **sudo systemctl start mysql**

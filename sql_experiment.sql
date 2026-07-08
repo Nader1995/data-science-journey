@@ -47,3 +47,27 @@ INSERT INTO student(student_id, name) VALUES (3, 'Claire');
 -- Insert additional records
 INSERT INTO student VALUES (4, 'Mike', 'Computer Science');
 INSERT INTO student VALUES (5, 'Jack', 'Biology');
+
+-- To have more control over dataset, we can use Constraints:
+CREATE TABLE student (
+
+	student_id INT AUTO_INCREMENT,
+	
+	-- every row must contain a name
+	-- name must be unique all over the database
+	name VARCHAR(20) UNIQUE NOT NULL,
+	major VARCHAR(20) DEFAULT 'Undecided',
+	
+	PRIMARY KEY(student_id)
+);
+
+-- Insert complete records
+INSERT INTO student(name, major) VALUES ('Jack', 'Biology');
+INSERT INTO student(name, major) VALUES ('Kate', 'Physics');
+
+-- Insert a record with only selected columns, 
+-- So 'major' will be 'Undecided'
+INSERT INTO student(name) VALUES ('Jimmy');
+
+
+SELECT * FROM student;

@@ -62,12 +62,34 @@ CREATE TABLE student (
 );
 
 -- Insert complete records
-INSERT INTO student(name, major) VALUES ('Jack', 'Biology');
+INSERT INTO student(name, major) VALUES ('Jack', 'Bio');
 INSERT INTO student(name, major) VALUES ('Kate', 'Physics');
 
 -- Insert a record with only selected columns, 
 -- So 'major' will be 'Undecided'
 INSERT INTO student(name) VALUES ('Jimmy');
+INSERT INTO student(name, major) VALUES ('Percy', 'Aerospace');
+INSERT INTO student(name) VALUES ('Ron');
+INSERT INTO student(name, major) VALUES ('Harry', 'Math');
 
 
 SELECT * FROM student;
+
+-- In order to update the whole database the change it:
+UPDATE student SET major= 'Biology' WHERE major='Bio';
+UPDATE student SET major= 'Biophysics' WHERE major= 'Biology' OR major= 'Physics';
+UPDATE student SET major= 'Mathematics' WHERE major= 'math' OR major= 'Math'
+
+-- To delete any specific row from the table:
+DELETE FROM student WHERE name= 'Harry' AND major= 'Mathematics'
+
+/*
+ * 
+ * Basic Queries
+ * 
+ * */
+
+SELECT * FROM student;
+SELECT name, major FROM student;
+SELECT student.name FROM student;
+

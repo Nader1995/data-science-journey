@@ -105,6 +105,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - I am currecntly using Ubuntu 20.4, and since MySQL Workbench is not compatible with my Ubuntu version, I installed **DBeaver** using this command: **sudo snap install DBeaver-ce --classic**
   - To make sure SQL server is running:
     - **sudo systemctl status mysql**, if it says **Active: active (running)** we are good to go otherwise run: **sudo systemctl start mysql**
+  - Use Giraffe Academy as a comprehensive source to learn SQL: https://www.giraffeacademy.com/databases/sql/
   - In a relational database, there are different types of indexing:
     - **Primary Key**: a column that uniquely identifies each row
     - **Foreign Key**: connects two tables 

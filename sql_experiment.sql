@@ -102,4 +102,5 @@ SELECT * FROM student LIMIT 2
 SELECT name FROM student WHERE major= 'Biophysics' AND student_id > 1
 
 
-
+-- Instead of using many WHERE we can use IN:
+SELECT * FROM student WHERE major IN ('Biophysics', 'Chemistry')

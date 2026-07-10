@@ -89,7 +89,17 @@ DELETE FROM student WHERE name= 'Harry' AND major= 'Mathematics'
  * 
  * */
 
-SELECT * FROM student;
-SELECT name, major FROM student;
-SELECT student.name FROM student;
+SELECT * FROM student; 
+SELECT name, major FROM student; 
+SELECT student.name FROM student; 
+
+-- Select and order: 
+SELECT student.name, student.major FROM student ORDER BY name; 
+SELECT student.name, student.major FROM student ORDER BY student_id DESC;
+
+-- It is also possible to limit our Query: 
+SELECT * FROM student LIMIT 2 
+SELECT name FROM student WHERE major= 'Biophysics' AND student_id > 1
+
+
 

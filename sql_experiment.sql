@@ -104,3 +104,52 @@ SELECT name FROM student WHERE major= 'Biophysics' AND student_id > 1
 
 -- Instead of using many WHERE we can use IN:
 SELECT * FROM student WHERE major IN ('Biophysics', 'Chemistry')
+
+/*
+ * 
+ * Creating Company Database
+ * 
+ *  */
+
+CREATE TABLE employee (
+	
+	emp_id INT,
+  	first_name VARCHAR(40),
+  	last_name VARCHAR(40),
+  	birth_day DATE,
+  	sex VARCHAR(1),
+  	salary INT,
+  	super_id INT,
+  	branch_id INT,
+  	
+  	PRIMARY KEY(emp_id)
+);
+
+DESCRIBE employee;
+DROP TABLE employee;
+
+CREATE TABLE branch (
+
+	branch_id INT,
+  	branch_name VARCHAR(40),
+  	mgr_id INT,
+  	mgr_start_date DATE,
+  	FOREIGN KEY(mgr_id) REFERENCES employee(emp_id) ON DELETE SET NULL,
+  	
+  	PRIMARY KEY(branch_id)
+);
+
+ALTER TABLE employee 
+ADD FOREIGN KEY(branch_id)
+REFERENCES branch(branch_id)
+ON DELETE SET NULL;
+
+ALTER TABLE employee
+ADD FOREIGN KEY(super_id)
+REFERENCES employee(emp_id)
+ON DELETE SET NULL;
+
+
+
+
+

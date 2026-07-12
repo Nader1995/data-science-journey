@@ -117,3 +117,4 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - **Data Definition Language** to define database **schemas**
     - **Data Control Language** to give permission to access different tables
     - **Data Manipulation Language** to manipulate data
+  - To create company database to practice using SQL, we are using this table of data: [./company-database-Giraffe-Academy.png](https://github.com/Nader1995/data-science-journey/blob/main/company-database-Giraffe-Academy.png)

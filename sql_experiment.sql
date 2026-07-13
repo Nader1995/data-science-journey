@@ -290,3 +290,16 @@ SELECT * FROM employee ORDER BY sex, first_name, last_name;
 
 -- Find the first 5 employees:
 SELECT * FROM employee LIMIT 5;
+
+-- Find the forename and surnames of all employees:
+SELECT first_name AS forename, last_name AS surname FROM employee; 
+
+-- Find all different genders:
+SELECT DISTINCT sex FROM employee;
+
+-- Find all employee born between 1970 and 1975:
+SELECT * FROM employee WHERE birth_day BETWEEN '1970-01-01' AND '1975-01-01';  
+
+-- Find all employees who are female & born after 1969 or who make over 80000
+
+

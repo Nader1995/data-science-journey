@@ -301,5 +301,57 @@ SELECT DISTINCT sex FROM employee;
 SELECT * FROM employee WHERE birth_day BETWEEN '1970-01-01' AND '1975-01-01';  
 
 -- Find all employees who are female & born after 1969 or who make over 80000
+SELECT * FROM employee WHERE (sex = 'F' AND birth_day >= '1969-01-01') OR salary >= 80000;
+
+-- Find all employees named Jim, Michael, Johnny or David
+SELECT * FROM employee WHERE first_name IN ('Jim', 'Micheal', 'Johnny', 'David');
+
+/*
+ * Functions
+ */
+
+-- Find the number of employees
+SELECT COUNT(super_id) FROM employee;
+
+-- Find the average of all employee's salaries
+SELECT AVG(salary) FROM employee;
+
+-- Find the sum of all employee's salaries
+SELECT SUM(salary) FROM employee;
+
+-- Find out how many males and females there are
+SELECT COUNT(sex), sex FROM employee GROUP BY sex
+
+-- Find the total sales of each salesman
+SELECT SUM(total_sales), emp_id FROM works_with GROUP BY emp_id;
+
+-- Find the total amount of money spent by each client
+SELECT SUM(total_sales), client_id FROM works_with GROUP BY client_id;
+
+/*
+ * Wildcards
+ * 
+ * % = zero or more character: Jo%, %son, %ohn%
+ * _ = Exactly one character: J__
+ * LIKE
+ * NOT LIKE
+ * 
+ */
+
+-- Find any client's who are an LLC
+SELECT * FROM client WHERE client_name LIKE '%LLC';
+
+-- Find any branch suppliers who are in the label business
+SELECT * FROM branch_supplier WHERE supplier_name LIKE '%label%' ;
+
+-- Find any employee born on the 10th day of the month
+SELECT * FROM employee WHERE birth_day LIKE '________05%' ;
+
+-- Find any clients who are schools
+SELECT * FROM client WHERE client_name LIKE '%school%';
+
+
+
+
 
 

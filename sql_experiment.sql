@@ -351,6 +351,18 @@ SELECT * FROM employee WHERE birth_day LIKE '________05%' ;
 SELECT * FROM client WHERE client_name LIKE '%school%';
 
 
+/*
+ * 
+ * Union
+ * Rule: same number of columns 
+ * 		 same data type
+ * 
+ */
+
+-- Find a list of employee and branch names
+SELECT first_name FROM employee
+UNION ALL
+SELECT branch_name FROM branch;
 
 
 

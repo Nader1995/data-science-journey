@@ -361,9 +361,27 @@ SELECT * FROM client WHERE client_name LIKE '%school%';
 
 -- Find a list of employee and branch names
 SELECT first_name FROM employee
-UNION ALL
+UNION
 SELECT branch_name FROM branch;
 
+/*
+ * Joins
+ */
 
+INSERT INTO branch VALUES (4, "Buffalo", NULL, NULL);
 
+-- Find all the branches and the name of their manager
+SELECT employee.emp_id, employee.first_name, branch.branch_name 
+FROM employee
+JOIN branch							-- Join two tables branch and employy
+ON employee.emp_id = branch.mgr_id; -- On the common column
 
+SELECT employee.emp_id, employee.first_name, branch.branch_name 
+FROM employee						-- Include all members of left table (employee)
+LEFT JOIN branch					-- Join two tables branch and employy
+ON employee.emp_id = branch.mgr_id; -- On the common column
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name 
+FROM employee						-- Include all members of right table (branch)
+RIGHT JOIN branch					-- Join two tables branch and employy
+ON employee.emp_id = branch.mgr_id; -- On the common column

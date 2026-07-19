@@ -373,15 +373,73 @@ INSERT INTO branch VALUES (4, "Buffalo", NULL, NULL);
 -- Find all the branches and the name of their manager
 SELECT employee.emp_id, employee.first_name, branch.branch_name 
 FROM employee
-JOIN branch							-- Join two tables branch and employy
+JOIN branch							-- Join two tables branch and employee
 ON employee.emp_id = branch.mgr_id; -- On the common column
 
 SELECT employee.emp_id, employee.first_name, branch.branch_name 
 FROM employee						-- Include all members of left table (employee)
-LEFT JOIN branch					-- Join two tables branch and employy
+LEFT JOIN branch					-- Join two tables branch and employee
 ON employee.emp_id = branch.mgr_id; -- On the common column
 
 SELECT employee.emp_id, employee.first_name, branch.branch_name 
 FROM employee						-- Include all members of right table (branch)
-RIGHT JOIN branch					-- Join two tables branch and employy
+RIGHT JOIN branch					-- Join two tables branch and employee
 ON employee.emp_id = branch.mgr_id; -- On the common column
+
+/*
+ * 
+ * Nested Queries
+ * 
+ */
+
+-- Find names of all employees who have sold over 50,000
+
+SELECT employee.first_name, employee.last_name
+FROM employee
+where employee.emp_id IN (SELECT works_with.emp_id
+						  FROM works_with
+						  WHERE works_with.total_sales > 50000);
+						  
+
+-- Find all clients who are handled by the branch that Michael Scott manages
+						  
+SELECT client.client_id, client.client_name
+FROM client
+WHERE client.branch_id IN (SELECT branch.branch_id
+						  FROM branch
+						  WHERE branch.mgr_id IN (SELECT employee.emp_id
+						  						  FROM employee
+						  						  WHERE employee.last_name LIKE '%Scott%'));
+
+-- Find the names of employees who work with clients handled by the scranton branch
+
+SELECT employee.first_name, employee.last_name
+FROM employee
+WHERE employee.super_id IN (SELECT branch.mgr_id
+							FROM branch
+						    WHERE branch_name = 'scranton');
+						    
+-- Find the names of all clients who have spent more than 100,000 dollars
+
+SELECT client.client_name
+FROM client
+WHERE client.client_id IN (SELECT client_id
+						   FROM(
+						   		SELECT SUM(works_with.total_sales) AS total, client_id 
+						   		FROM works_with
+						   		GROUP BY works_with.client_id
+						   ) AS total_client_id
+						   WHERE total > 100000
+						);
+-- This is just to check what we have in our inner query above:
+						  
+SELECT SUM(works_with.total_sales) AS total, client_id 
+						   		FROM works_with
+						   		GROUP BY works_with.client_id;
+						    
+						    
+						  
+						  
+						  
+						  
+						  

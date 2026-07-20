@@ -438,8 +438,59 @@ SELECT SUM(works_with.total_sales) AS total, client_id
 						   		FROM works_with
 						   		GROUP BY works_with.client_id;
 						    
-									  
+/*
+ * Triggers 
+ */									  
 						  
-						  
-						  
+CREATE TABLE trigger_test(
+	
+message VARCHAR(200)
+);					  
+	
+CREATE TRIGGER my_trigger 
+BEFORE INSERT
+ON employee
+FOR EACH ROW
+INSERT INTO trigger_test 
+VALUES('added new employee');
+	
+INSERT INTO employee VALUES(
+
+	110, 
+	'Kevin',
+	'Malone',
+	'1978-02-19',
+	'M',
+	69000,
+	106,
+	3
+);
+
+SELECT * FROM trigger_test;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 						  

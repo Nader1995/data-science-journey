@@ -159,7 +159,7 @@ ADD FOREIGN KEY(branch_id)
 REFERENCES branch(branch_id)
 ON DELETE SET NULL;
 -- If the reference is deleted, do NOT leave an invalid id
--- replace it with NULL
+-- replace it with NULL. Use when you might delete a foreign key
 
 ALTER TABLE employee
 ADD FOREIGN KEY(super_id)
@@ -186,6 +186,7 @@ CREATE TABLE works_with (
   	PRIMARY KEY(emp_id, client_id),
   	FOREIGN KEY(emp_id) REFERENCES employee(emp_id) ON DELETE CASCADE,
   	FOREIGN KEY(client_id) REFERENCES client(client_id) ON DELETE CASCADE
+  	-- Use ON DELETE CASCADE when you might delete a primary key
 );
 
 
@@ -437,8 +438,7 @@ SELECT SUM(works_with.total_sales) AS total, client_id
 						   		FROM works_with
 						   		GROUP BY works_with.client_id;
 						    
-						    
-						  
+									  
 						  
 						  
 						  

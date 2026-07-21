@@ -65,7 +65,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - **git pull** is basically git fetch + git clone 
   - **git merge** combines two branches together
   - **git diff** shows any changes made
-  - **git tag** tag any specific commit for future reference
+  - **git tag name -m "message"** to tag any specific commit for future reference, and use **git tag** to see name of all tags and eventually use **git push origin tag_name** to push your tag
 - VS Code
   - There are some necessary extensions, recommended to activate after installing VS Code:
     - Python

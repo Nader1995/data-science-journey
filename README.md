@@ -16,6 +16,7 @@ It contains 9 phases:
     - [Phase 1B — Pandas Project](#phase-1b--pandas-project)
   - [Phase 2 — SQL \& Database](#phase-2--sql--database)
     - [Phase 2A — SQL Fundamentals](#phase-2a--sql-fundamentals)
+    - [Phase 2B — SQL Advanced](#phase-2b--sql-advanced)
 
 
 # Phases
@@ -119,3 +120,5 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - **Data Manipulation Language** to manipulate data
   - To create company database to practice using SQL, we are using this table of data: [./company-database-Giraffe-Academy.png](https://github.com/Nader1995/data-science-journey/blob/main/company-database-Giraffe-Academy.png)
   - To execute one SQL statement use: **Ctrl+Enter**, but in order to execute a script use: **Alt+X** for examle when running a trigger, select the complete trigger script, from **DELIMITER $$** through **DELIMITER ;** and execute it using **Alt+X**
+  
+  ### Phase 2B — SQL Advanced 

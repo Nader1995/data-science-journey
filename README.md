@@ -122,3 +122,8 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   - To execute one SQL statement use: **Ctrl+Enter**, but in order to execute a script use: **Alt+X** for examle when running a trigger, select the complete trigger script, from **DELIMITER $$** through **DELIMITER ;** and execute it using **Alt+X**
   
   ### Phase 2B — SQL Advanced 
+  - I am using **https://www.kaggle.com/learn/advanced-sql** to learn: 
+    - JOIN and UNION
+    - Analytic Functions
+    - Nested and Repeated Data
+    - Writing Efficient Queries

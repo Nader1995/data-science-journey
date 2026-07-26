@@ -127,3 +127,4 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - Analytic Functions
     - Nested and Repeated Data
     - Writing Efficient Queries
+  - In order to review CTE (Common Table Expression - Advanced SQL Topic), ORDER BY, GROUP BY and etc, we use: **https://www.kaggle.com/learn/intro-to-sql**

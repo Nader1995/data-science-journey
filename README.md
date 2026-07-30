@@ -19,7 +19,7 @@ It contains 9 phases:
     - [Phase 2B — SQL Advanced](#phase-2b--sql-advanced)
       - [SQL Query Execution Order](#sql-query-execution-order)
       - [Easy Way to Remember](#easy-way-to-remember)
-      - [Important Rule](#important-rule)
+      - [Important Rule and Hint](#important-rule-and-hint)
         - [Example](#example)
 
 
@@ -169,12 +169,20 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   LIMIT
   ```
 
-  #### Important Rule
+  #### Important Rule and Hint
+  - **`COUNT(1)` acts just like `COUNT(*)`.**
+  - When filtering a `TIMESTAMP` column, compare it directly instead of converting it with `DATE()`.
 
+    ```sql
+    WHERE trip_start_timestamp > '2016-01-01'
+      AND trip_start_timestamp < '2016-04-01'
+    ```
+
+    This preserves the time component and avoids unintentionally excluding all records from the boundary date.
+    
   - **`WHERE` filters rows before grouping.**
   - **`HAVING` filters groups after aggregation.**
-  - Hint: **`COUNT(1)` acts just like `COUNT(*)`.**
-
+  
   ##### Example
 
   ```sql
@@ -195,3 +203,5 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   5. Keep only departments with at least 10 employees.
   6. Return `department` and `num_employees`.
   7. Sort the results from highest to lowest employee count.
+
+  

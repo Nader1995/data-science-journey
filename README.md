@@ -173,6 +173,7 @@ there are many commands, but I will just bring ones usefull for everyday usage:
 
   - **`WHERE` filters rows before grouping.**
   - **`HAVING` filters groups after aggregation.**
+  - Hint: **`COUNT(1)` acts just like `COUNT(*)`.**
 
   ##### Example
 

@@ -17,6 +17,10 @@ It contains 9 phases:
   - [Phase 2 — SQL \& Database](#phase-2--sql--database)
     - [Phase 2A — SQL Fundamentals](#phase-2a--sql-fundamentals)
     - [Phase 2B — SQL Advanced](#phase-2b--sql-advanced)
+      - [SQL Query Execution Order](#sql-query-execution-order)
+      - [Easy Way to Remember](#easy-way-to-remember)
+      - [Important Rule](#important-rule)
+        - [Example](#example)
 
 
 # Phases
@@ -127,4 +131,66 @@ there are many commands, but I will just bring ones usefull for everyday usage:
     - Analytic Functions
     - Nested and Repeated Data
     - Writing Efficient Queries
-  - In order to review CTE (Common Table Expression - Advanced SQL Topic), ORDER BY, GROUP BY and etc, we use: **https://www.kaggle.com/learn/intro-to-sql**
+  - In order to review CTE (Common Table Expression - Advanced SQL Topic), ORDER BY, GROUP BY, EXTRACT(WEEK from DATE, DAY from DATE, YEAR from DATE), WHERE, HAVING, DISTINCT, LIMIT and etc, we use: **https://www.kaggle.com/learn/intro-to-sql**
+  #### SQL Query Execution Order
+  
+  Although we write SQL queries in a logical order, the database executes them in a different order.
+  | Execution Order | Clause | Purpose |
+  |-----------------|--------|---------|
+  | 1 | `FROM` | Select the source table(s). |
+  | 2 | `WHERE` | Filter individual rows before grouping. |
+  | 3 | `GROUP BY` | Group rows that share the same values. |
+  | 4 | Aggregate Functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, etc.) | Compute values for each group. |
+  | 5 | `HAVING` | Filter groups based on aggregate results. |
+  | 6 | `SELECT` | Choose the columns and expressions to return. |
+  | 7 | `DISTINCT` *(if used)* | Remove duplicate rows from the result. |
+  | 8 | `ORDER BY` | Sort the final result. |
+  | 9 | `LIMIT` / `OFFSET` *(if used)* | Restrict the number of returned rows. |
+
+  #### Easy Way to Remember
+
+  ```
+  FROM
+      ↓
+  WHERE
+      ↓
+  GROUP BY
+      ↓
+  Aggregate Functions
+      ↓
+  HAVING
+      ↓
+  SELECT
+      ↓
+  DISTINCT
+      ↓
+  ORDER BY
+      ↓
+  LIMIT
+  ```
+
+  #### Important Rule
+
+  - **`WHERE` filters rows before grouping.**
+  - **`HAVING` filters groups after aggregation.**
+
+  ##### Example
+
+  ```sql
+  SELECT department, COUNT(*) AS num_employees
+  FROM employees
+  WHERE salary > 5000
+  GROUP BY department
+  HAVING COUNT(*) >= 10
+  ORDER BY num_employees DESC;
+  ```
+
+  Execution:
+
+  1. Read the `employees` table.
+  2. Keep only employees with `salary > 5000`.
+  3. Group the remaining employees by `department`.
+  4. Calculate `COUNT(*)` for each department.
+  5. Keep only departments with at least 10 employees.
+  6. Return `department` and `num_employees`.
+  7. Sort the results from highest to lowest employee count.

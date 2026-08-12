@@ -18,7 +18,6 @@ It contains 9 phases:
     - [Phase 2A — SQL Fundamentals](#phase-2a--sql-fundamentals)
     - [Phase 2B — SQL Advanced](#phase-2b--sql-advanced)
       - [SQL Query Execution Order](#sql-query-execution-order)
-      - [Easy Way to Remember](#easy-way-to-remember)
       - [Important Rule and Hint](#important-rule-and-hint)
         - [Example](#example)
 
@@ -147,30 +146,9 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   | 8 | `ORDER BY` | Sort the final result. |
   | 9 | `LIMIT` / `OFFSET` *(if used)* | Restrict the number of returned rows. |
 
-  #### Easy Way to Remember
-
-  ```
-  FROM
-      ↓
-  WHERE
-      ↓
-  GROUP BY
-      ↓
-  Aggregate Functions
-      ↓
-  HAVING
-      ↓
-  SELECT
-      ↓
-  DISTINCT
-      ↓
-  ORDER BY
-      ↓
-  LIMIT
-  ```
-
   #### Important Rule and Hint
-  - **`COUNT(1)` acts just like `COUNT(*)`.**
+  - **`COUNT(1)`** acts just like **`COUNT(*)`.**
+  - **`GROUP BY`** collapses the rows, while **`PARTITION BY`** keeps the original rows.
   - When filtering a `TIMESTAMP` column, compare it directly instead of converting it with `DATE()`.
 
     ```sql

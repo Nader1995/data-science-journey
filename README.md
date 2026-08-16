@@ -20,6 +20,7 @@ It contains 9 phases:
       - [SQL Query Execution Order](#sql-query-execution-order)
       - [Important Rule and Hint](#important-rule-and-hint)
         - [Example](#example)
+    - [Phase 2C — SQL Project](#phase-2c--sql-project)
 
 
 # Phases
@@ -182,4 +183,5 @@ there are many commands, but I will just bring ones usefull for everyday usage:
   6. Return `department` and `num_employees`.
   7. Sort the results from highest to lowest employee count.
 
-  
+### Phase 2C — SQL Project
+[A good reference of a bunch of projects to practice SQL](https://www.linkedin.com/posts/ezinneesther_when-i-first-started-learning-sql-i-remember-activity-7419299006532517889-abMd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRPrtYBUC1SPtxW_tlRFZ7qj1BaNbCL_YI)
